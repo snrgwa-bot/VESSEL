@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vessel Support — Get Help with Your Hydration Tracker</title>
+<meta name="description" content="Get help with Vessel water tracker. FAQs, contact info, and troubleshooting.">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: linear-gradient(180deg, #E8F4F8 0%, #F5F1E8 100%); color: #1a2a3a; line-height: 1.6; min-height: 100vh; }
+.container { max-width: 800px; margin: 0 auto; padding: 2rem 1.5rem; }
+nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 3rem; }
+nav .logo { font-weight: 700; font-size: 1.25rem; color: #2A8FBA; text-decoration: none; }
+nav ul { list-style: none; display: flex; gap: 2rem; }
+nav a { color: #1a2a3a; text-decoration: none; font-size: 0.95rem; }
+nav a:hover { color: #2A8FBA; }
+h1 { font-size: 2.5rem; margin-bottom: 0.5rem; color: #194F7A; }
+.subtitle { color: #4a5a6a; margin-bottom: 3rem; font-size: 1.1rem; }
+.card { background: white; padding: 2rem; border-radius: 20px; margin-bottom: 1.5rem; box-shadow: 0 2px 16px rgba(0,0,0,0.04); }
+h2 { color: #2A8FBA; margin-bottom: 1rem; font-size: 1.3rem; }
+h3 { margin-top: 1.25rem; margin-bottom: 0.5rem; color: #1a2a3a; }
+p { margin-bottom: 0.75rem; }
+a { color: #2A8FBA; }
+.email-cta { display: inline-block; background: #2A8FBA; color: white; padding: 0.85rem 1.75rem; border-radius: 999px; text-decoration: none; font-weight: 600; margin-top: 1rem; }
+footer { text-align: center; padding: 3rem 1rem 2rem; color: #6b7a8a; font-size: 0.9rem; border-top: 1px solid #dde5ec; margin-top: 3rem; }
+footer a { color: #2A8FBA; margin: 0 0.75rem; text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="container">
+  <nav>
+    <a href="index.html" class="logo">Vessel</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+    </ul>
+  </nav>
+
+  <h1>Support</h1>
+  <p class="subtitle">Get help, report bugs, or share feedback.</p>
+
+  <div class="card">
+    <h2>Contact Us</h2>
+    <p>We read every email and usually respond within 24 hours.</p>
+    <a href="mailto:essentialdevteam@gmail.com?subject=Vessel%20Support" class="email-cta">Email Support</a>
+  </div>
+
+  <div class="card">
+    <h2>Frequently Asked Questions</h2>
+
+    <h3>How does Vessel calculate hydration?</h3>
+    <p>Each drink has a scientifically-backed hydration multiplier based on peer-reviewed research. Water is 100%, coffee is 92% (Killer et al. 2014), tea is 95%, beer is -10%, wine is -30%, and spirits are -50%. These values represent net hydration after accounting for diuretic effects.</p>
+
+    <h3>Does my data get shared?</h3>
+    <p>No. All your drink data stays on your device. Vessel has no accounts, no backend, and no analytics. If you enable Apple Health sync, your water and caffeine intake are saved to HealthKit on your device — you control that entirely.</p>
+
+    <h3>Why is alcohol negative?</h3>
+    <p>Alcohol suppresses vasopressin (antidiuretic hormone), causing your kidneys to release more fluid than you consumed. Spirits at 40% ABV can dehydrate you by approximately 50% of the volume consumed. Beer and wine have smaller effects due to their lower alcohol content.</p>
+
+    <h3>How do reminders work?</h3>
+    <p>In Settings, toggle "Enable reminders" and set your preferred start hour, end hour, and interval (every 60–240 minutes). Vessel schedules local notifications at each interval. You must grant notification permission when prompted.</p>
+
+    <h3>How do I delete my data?</h3>
+    <p>Go to Settings → Data → "Delete all drink data". Confirm, and every logged drink is permanently removed. You can also delete individual drinks by long-pressing them or swiping in History.</p>
+
+    <h3>Can I change my daily goal?</h3>
+    <p>Yes. In Settings, tap the "Daily target" field and enter any value. You can also enter your body weight to auto-calculate the recommended goal (half your weight in ounces).</p>
+
+    <h3>Does Vessel support iCloud sync?</h3>
+    <p>Not yet. All data is stored locally on your device. iCloud sync is on the roadmap for a future update.</p>
+
+    <h3>What are the achievement badges?</h3>
+    <p>Earn badges for streaks (3, 7, 14, 30, 100 days), drink counts (10, 50, 200, 500), and volume milestones (10L, 50L, 100L total).</p>
+  </div>
+
+  <div class="card">
+    <h2>Report a Bug</h2>
+    <p>Found an issue? Please email us with:</p>
+    <ul style="margin: 0.75rem 0 0.75rem 1.5rem;">
+      <li>Your iPhone model and iOS version</li>
+      <li>A description of what happened</li>
+      <li>Steps to reproduce, if possible</li>
+      <li>A screenshot if relevant</li>
+    </ul>
+    <a href="mailto:essentialdevteam@gmail.com?subject=Vessel%20Bug%20Report" class="email-cta">Report a Bug</a>
+  </div>
+
+  <footer>
+    <div>
+      <a href="index.html">Home</a>·
+      <a href="privacy.html">Privacy Policy</a>·
+      <a href="mailto:essentialdevteam@gmail.com">Contact</a>
+    </div>
+    <p style="margin-top: 1rem;">© 2026 Essential Dev Team</p>
+  </footer>
+</div>
+</body>
+</html>

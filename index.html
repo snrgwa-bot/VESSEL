@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vessel — Water Tracker | Hydration, Caffeine & Drinks</title>
+<meta name="description" content="Vessel is the smartest way to track daily hydration. Science-backed multipliers for water, coffee, tea, beer, wine, and more.">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: linear-gradient(180deg, #E8F4F8 0%, #F5F1E8 100%);
+  color: #1a2a3a;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 5rem; }
+nav .logo { font-weight: 700; font-size: 1.25rem; color: #2A8FBA; }
+nav ul { list-style: none; display: flex; gap: 2rem; }
+nav a { color: #1a2a3a; text-decoration: none; font-size: 0.95rem; }
+nav a:hover { color: #2A8FBA; }
+
+.hero { text-align: center; padding: 3rem 1rem 5rem; }
+.hero h1 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, #2A8FBA 0%, #194F7A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero p.tagline {
+  font-size: 1.35rem;
+  color: #4a5a6a;
+  max-width: 600px;
+  margin: 0 auto 2.5rem;
+}
+.cta {
+  display: inline-block;
+  background: linear-gradient(135deg, #2A8FBA, #1F6F94);
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+  box-shadow: 0 8px 24px rgba(42, 143, 186, 0.3);
+  transition: transform 0.2s;
+}
+.cta:hover { transform: translateY(-2px); }
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 4rem 0;
+}
+.feature {
+  background: white;
+  padding: 2rem;
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.04);
+}
+.feature h3 { color: #2A8FBA; margin-bottom: 0.5rem; }
+.feature .icon { font-size: 2rem; margin-bottom: 1rem; }
+
+.science {
+  background: white;
+  padding: 3rem;
+  border-radius: 24px;
+  margin: 4rem 0;
+}
+.science h2 { margin-bottom: 1.5rem; }
+.science table { width: 100%; border-collapse: collapse; }
+.science td { padding: 0.75rem 0; border-bottom: 1px solid #eef2f5; }
+.science td:last-child { text-align: right; font-weight: 600; color: #2A8FBA; }
+
+footer {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+  color: #6b7a8a;
+  font-size: 0.9rem;
+  border-top: 1px solid #dde5ec;
+  margin-top: 4rem;
+}
+footer a { color: #2A8FBA; margin: 0 0.75rem; text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="container">
+  <nav>
+    <div class="logo">Vessel</div>
+    <ul>
+      <li><a href="support.html">Support</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <h1>Drink smarter,<br>not just more.</h1>
+    <p class="tagline">The only hydration tracker that uses peer-reviewed science to show how your drinks actually hydrate you.</p>
+    <a href="https://apps.apple.com/us/app/vessel-water-tracker/id6762180973" class="cta">Download on the App Store</a>
+  </section>
+
+  <div class="features">
+    <div class="feature">
+      <div class="icon">💧</div>
+      <h3>Science-backed multipliers</h3>
+      <p>Coffee at 92%, beer at -10%, spirits at -50%. Based on peer-reviewed research, not guesswork.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">🌊</div>
+      <h3>Ocean-depth progress ring</h3>
+      <p>Beautiful water wave animation that deepens as you drink more throughout the day.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">⚠️</div>
+      <h3>Health warnings</h3>
+      <p>Alerts for excess caffeine (FDA limits), alcohol (CDC guidelines), and overhydration (hyponatremia risk).</p>
+    </div>
+    <div class="feature">
+      <div class="icon">❤️</div>
+      <h3>Apple Health sync</h3>
+      <p>Optional HealthKit integration for water and caffeine — all data stays on your device.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">🏆</div>
+      <h3>12 achievements</h3>
+      <p>Streak badges and volume milestones to keep you motivated day after day.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">📊</div>
+      <h3>Week, month, 3-month charts</h3>
+      <p>Color-coded stacked bars show exactly what you've been drinking over time.</p>
+    </div>
+  </div>
+
+  <div class="science">
+    <h2>Hydration Multipliers</h2>
+    <p style="margin-bottom: 1.5rem; color: #4a5a6a;">How much each ml counts toward your daily goal:</p>
+    <table>
+      <tr><td>Water</td><td>100%</td></tr>
+      <tr><td>Electrolytes</td><td>105%</td></tr>
+      <tr><td>Tea</td><td>95%</td></tr>
+      <tr><td>Coffee</td><td>92%</td></tr>
+      <tr><td>Juice</td><td>90%</td></tr>
+      <tr><td>Soda</td><td>85%</td></tr>
+      <tr><td>Beer</td><td>-10%</td></tr>
+      <tr><td>Wine</td><td>-30%</td></tr>
+      <tr><td>Spirits</td><td>-50%</td></tr>
+    </table>
+  </div>
+
+  <footer>
+    <div>
+      <a href="support.html">Support</a>·
+      <a href="privacy.html">Privacy Policy</a>·
+      <a href="mailto:essentialdevteam@gmail.com">Contact</a>
+    </div>
+    <p style="margin-top: 1rem;">© 2026 Essential Dev Team. Made with care.</p>
+  </footer>
+</div>
+</body>
+</html>
