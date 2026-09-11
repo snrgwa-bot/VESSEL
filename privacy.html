@@ -27,6 +27,11 @@ a { color: #2A8FBA; }
 .tldr strong { color: #194F7A; }
 footer { text-align: center; padding: 3rem 1rem 2rem; color: #6b7a8a; font-size: 0.9rem; border-top: 1px solid #dde5ec; margin-top: 3rem; }
 footer a { color: #2A8FBA; margin: 0 0.75rem; text-decoration: none; }
+
+/* Large displays: scale the root font size so this page is not tiny on a
+   2560px monitor. The prose column keeps its own reading measure. */
+@media (min-width: 1500px) { :root { font-size: 17.5px; } }
+@media (min-width: 2000px) { :root { font-size: 19px; } }
 </style>
 </head>
 <body>
