@@ -45,15 +45,15 @@ footer a { color: #2A8FBA; margin: 0 0.75rem; text-decoration: none; }
   </nav>
 
   <h1>Privacy Policy</h1>
-  <p class="subtitle">Last updated: July 13, 2026</p>
+  <p class="subtitle">Last updated: October 26, 2026</p>
 
   <div class="card">
     <div class="tldr">
-      <strong>TL;DR:</strong> Vessel does not collect any personal data. Everything stays on your device. No accounts, no analytics, no tracking, no ads. Ever.
+      <strong>TL;DR:</strong> Your drinks, goals and Apple Health data stay on your iPhone. No accounts, no tracking, no ads. From version 1.5.1 the app sends anonymous usage statistics (never a drink amount or anything you enter) to help us improve it, and you can turn them off in Settings &rsaquo; Privacy.
     </div>
 
     <h2>1. Data We Collect</h2>
-    <p><strong>None.</strong> Vessel does not collect, transmit, or store any of your personal data on remote servers. We have no user accounts, no login, and no backend infrastructure.</p>
+    <p>Vessel has no user accounts and no login, and it never collects personal data. The only thing that leaves your device is the anonymous usage statistics described in section 5, which you can turn off.</p>
 
     <h2>2. Data Stored on Your Device</h2>
     <p>All data you enter into Vessel is stored locally on your iPhone using Apple's SwiftData framework:</p>
@@ -71,15 +71,19 @@ footer a { color: #2A8FBA; margin: 0 0.75rem; text-decoration: none; }
       <li>Apple Health data stays on your device and is encrypted by iOS</li>
       <li>You can revoke permission any time in Settings → Privacy & Security → Health</li>
     </ul>
-    <p>Vessel never reads HealthKit data for any purpose other than displaying your own intake within the app.</p>
+    <p>Vessel never reads HealthKit data for any purpose other than displaying your own intake within the app. Health data is never included in the usage statistics below.</p>
 
     <h2>4. Notifications</h2>
-    <p>If you enable hydration reminders, Vessel uses Apple's local notification system to send you reminders on your chosen schedule. No notification data is sent to our servers because we don't have any servers.</p>
+    <p>If you enable hydration reminders, Vessel uses Apple's local notification system to send you reminders on your chosen schedule. Notifications are scheduled on your device and nothing about them is sent to us.</p>
 
-    <h2>5. Third-Party Services</h2>
-    <p>Vessel contains no analytics, advertising, or tracking services of any kind. The app makes no network requests except for Apple StoreKit purchase and subscription entitlement checks, and periodic App Store version checks — none of which contain any personal data.</p>
+    <h2>5. Anonymous Usage Statistics</h2>
+<p>To learn which features help people and where the app goes wrong, Vessel sends anonymous usage statistics to our own server (hosted by Supabase). This is on by default and you can turn it off at any time in <strong>Settings &rsaquo; Privacy &rsaquo; Share Usage Data</strong>; turning it off stops collection and deletes anything not yet sent.</p>
+<p><strong>What is sent:</strong> a random installation ID created for this app (it is deleted with the app); device model, iOS and app version; language, region and time zone; accessibility settings (such as larger text or reduced motion); when sessions start and end and the last screen viewed; the app's own events (for example that a drink was logged and its drink type, that a drink was edited or deleted, that the daily goal was reached or that onboarding was finished &mdash; never the amount, time, note or goal); paywall views and taps; subscription start, trial, renewal status, cancellation and refund events; whether the app asked for a review; and Apple's anonymous crash and performance reports (MetricKit).</p>
+<p><strong>What is never sent:</strong> your name, email, phone or address; your location; the advertising identifier (IDFA) or the identifier for vendors (IDFV); prices you paid, receipts or transaction IDs; Apple Health data; and anything you enter or create &mdash; no drink amounts, notes, goals, body weight or reminder times. Your IP address is not stored or used. Statistics are not linked to your identity and are not used for tracking or advertising.</p>
+<p><strong>Retention:</strong> usage statistics are kept for 13 months, crash and performance reports for 6 months. <strong>Deletion:</strong> email us the Installation ID shown in Settings &rsaquo; Privacy and we will delete everything recorded for it.</p>
+<p>Other than that, the app makes no network requests except for Apple StoreKit purchase and subscription entitlement checks. Vessel contains no advertising, no social logins and no third-party SDKs that collect data.</p>
 
-    <h2>6. In-App Purchases &amp; Subscriptions</h2>
+<h2>6. In-App Purchases &amp; Subscriptions</h2>
     <p>Vessel offers an optional Vessel Pro subscription. Purchases and subscriptions are processed entirely by Apple through StoreKit:</p>
     <ul>
       <li>Payment is handled by Apple; we never see or store your payment details (card numbers, billing address, etc.)</li>
@@ -88,14 +92,16 @@ footer a { color: #2A8FBA; margin: 0 0.75rem; text-decoration: none; }
     </ul>
 
     <h2>7. Children's Privacy</h2>
-    <p>Vessel is not directed at children under 13. Because we collect no data, no child data could ever be collected or processed.</p>
+    <p>Vessel is not directed at children under 13. We collect no personal data from anyone; the anonymous usage statistics in section 5 are not linked to any person.</p>
 
     <h2>8. Your Rights</h2>
-    <p>Since we collect no data, there is nothing for us to export, delete, or correct on our end. All control over your data lives in your device:</p>
+    <p>Your drink data lives only on your device, so all control over it is yours:</p>
     <ul>
       <li>To delete all drink data: Settings → Data → "Delete all drink data"</li>
       <li>To revoke HealthKit access: iPhone Settings → Privacy & Security → Health → Vessel</li>
-      <li>To delete everything: Delete the app from your iPhone</li>
+      <li>To stop usage statistics: Settings &rarr; Privacy &rarr; turn off "Share Usage Data"</li>
+<li>To delete usage statistics already sent: email us the Installation ID from Settings &rarr; Privacy</li>
+<li>To delete everything on your device: Delete the app from your iPhone</li>
     </ul>
 
     <h2>9. Changes to This Policy</h2>
