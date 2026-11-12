@@ -45,7 +45,7 @@ footer a { color: #2A8FBA; margin: 0 0.75rem; text-decoration: none; }
   </nav>
 
   <h1>Privacy Policy</h1>
-  <p class="subtitle">Last updated: November 11, 2026</p>
+  <p class="subtitle">Last updated: November 12, 2026</p>
 
   <div class="card">
     <div class="tldr">
@@ -53,16 +53,17 @@ footer a { color: #2A8FBA; margin: 0 0.75rem; text-decoration: none; }
     </div>
 
     <h2>1. Data We Collect</h2>
-    <p>Vessel has no user accounts and no login, and Vessel itself never collects personal data. Two things leave your device: the anonymous usage statistics described in section 5, which you can turn off, and, in the free version only, the data Google AdMob uses to show ads, described in section 6.</p>
+    <p>Vessel has no user accounts and no login, and Vessel itself never collects personal data. Apart from a bug report you choose to send (section 2), two things leave your device: the anonymous usage statistics described in section 5, which you can turn off, and, in the free version only, the data Google AdMob uses to show ads, described in section 6.</p>
 
     <h2>2. Data Stored on Your Device</h2>
     <p>All data you enter into Vessel is stored locally on your iPhone using Apple's SwiftData framework:</p>
     <ul>
       <li>Logged drinks (type, amount, timestamp, optional notes)</li>
-      <li>Settings (daily goal, preferred unit, reminder schedule, theme, body weight)</li>
+      <li>Settings (your name if you enter one, daily goal, preferred unit, reminder schedule, day start time, theme and glass style, body weight)</li>
       <li>Quick-add presets</li>
     </ul>
-    <p>This data never leaves your device. If you delete the app, all data is permanently removed.</p>
+    <p>Vessel uses your iPhone's motion sensors only to make the water in the bottle move as you tilt or shake the phone. This happens on your device; motion data is never stored or sent, and no permission is needed.</p>
+    <p>This data stays on your device. It only leaves if you choose to send it: when you tap Report a Bug, Vessel prepares an email to us with an app log attached (recent actions, including the drinks you logged and their amounts, your device model and iOS version, and whether Pro, reminders and Apple Health sync are on) and any crash reports from Apple. Nothing is sent until you tap Send, and we use it only to fix the problem. If you delete the app, everything stored in Vessel is permanently removed; water and caffeine already saved to Apple Health stay there until you delete them in the Health app.</p>
 
     <h2>3. Apple Health (HealthKit)</h2>
     <p>Vessel offers optional integration with Apple Health. If you enable this in Settings:</p>
@@ -78,7 +79,7 @@ footer a { color: #2A8FBA; margin: 0 0.75rem; text-decoration: none; }
 
     <h2>5. Anonymous Usage Statistics</h2>
 <p>To learn which features help people and where the app goes wrong, Vessel sends anonymous usage statistics to our own server (hosted by Supabase). This is on by default and you can turn it off at any time in <strong>Settings &rsaquo; Privacy &rsaquo; Share Usage Data</strong>; turning it off stops collection and deletes anything not yet sent.</p>
-<p><strong>What is sent:</strong> a random installation ID created for this app (it is deleted with the app); device model, iOS and app version; language, region and time zone; accessibility settings (such as larger text or reduced motion); when sessions start and end and the last screen viewed; the app's own events (for example that a drink was logged and its drink type, that a drink was edited or deleted, that the daily goal was reached or that onboarding was finished &mdash; never the amount, time, note or goal); paywall views and taps; subscription start, trial, renewal status, cancellation and refund events; whether the app asked for a review; and Apple's anonymous crash and performance reports (MetricKit).</p>
+<p><strong>What is sent:</strong> a random installation ID created for this app (it is deleted with the app); device model, iOS and app version; language, region and time zone; accessibility settings (such as larger text or reduced motion); when sessions start and end and the last screen viewed; the app's own events (for example that a drink was logged and its drink type, that a drink was edited or deleted, that the daily goal was reached or that onboarding was finished &mdash; never the amount, time, note or goal); paywall views and taps; subscription start, trial, renewal status, cancellation, refund and restore-purchase events; whether the app asked for a review; and Apple's anonymous crash and performance reports (MetricKit).</p>
 <p><strong>What is never sent:</strong> your name, email, phone or address; your location; the advertising identifier (IDFA) or the identifier for vendors (IDFV); prices you paid, receipts or transaction IDs; Apple Health data; and anything you enter or create &mdash; no drink amounts, notes, goals, body weight or reminder times. Your IP address is not stored or used. Statistics are not linked to your identity and are not used for tracking or advertising.</p>
 <p><strong>Retention:</strong> usage statistics are kept for 13 months, crash and performance reports for 6 months. <strong>Deletion:</strong> email us the Installation ID shown in Settings &rsaquo; Privacy and we will delete everything recorded for it.</p>
 <p>Other than that, the app makes no network requests except for Apple StoreKit purchase and subscription entitlement checks and, in the free version, Google AdMob ads (section 6). Vessel has no social logins.</p>
@@ -104,7 +105,7 @@ footer a { color: #2A8FBA; margin: 0 0.75rem; text-decoration: none; }
       <li>You can manage or cancel your subscription at any time in iOS Settings → Apple ID → Subscriptions</li>
     </ul>
 
-    <p><strong>Refund requests.</strong> When someone asks Apple for a refund, Apple may ask us about the purchase. By subscribing, you agree that we may then tell Apple that the purchase was delivered, that a free trial was available beforehand, and that we prefer a refund of the unused part. We share nothing else, and only for purchases made after this consent appeared on the subscription screen. We are also notified when a refund is requested or granted, without learning who you are.</p>
+    <p><strong>Refund requests.</strong> When someone asks Apple for a refund, Apple may ask us about the purchase. By subscribing, you agree that we may then tell Apple that the purchase was delivered, that the free version or a free trial was available beforehand, and that we prefer a refund of the unused part. We share nothing else, and only for purchases made after this consent appeared on the subscription screen. We are also notified when a refund is requested or granted, without learning who you are.</p>
 
 <h2>8. Children's Privacy</h2>
     <p>Vessel is not directed at children under 13. We collect no personal data from anyone; the anonymous usage statistics in section 5 are not linked to any person.</p>
@@ -112,7 +113,7 @@ footer a { color: #2A8FBA; margin: 0 0.75rem; text-decoration: none; }
     <h2>9. Your Rights</h2>
     <p>Your drink data lives only on your device, so all control over it is yours:</p>
     <ul>
-      <li>To delete all drink data: Settings → Data → "Delete all drink data"</li>
+      <li>To delete all drink data: Settings → Delete All Drink Data (at the bottom)</li>
       <li>To revoke HealthKit access: iPhone Settings → Privacy & Security → Health → Vessel</li>
       <li>To stop usage statistics: Settings &rarr; Privacy &rarr; turn off "Share Usage Data"</li>
 <li>To delete usage statistics already sent: email us the Installation ID from Settings &rarr; Privacy</li>
